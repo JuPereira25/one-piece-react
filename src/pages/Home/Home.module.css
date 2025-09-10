@@ -1,0 +1,57 @@
+.homecontainer {
+  min-height: 100vh;
+  background: 
+  linear-gradient(
+    to bottom, 
+    rgba(3, 32, 69, 0.001),  
+    rgba(3, 25, 53, 1)     
+  ),
+  url('../../assets/background-nika.jpeg') no-repeat center top;
+  background-size: cover;
+  display: flex;                     
+  flex-direction: column;
+  justify-content: center;           
+  align-items: center;               
+  padding: 1rem;                     
+}
+
+
+.title {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 290px;
+    
+}
+
+.titleH1 {
+    color: var(--text-color-primary);
+}
+
+.yellow {
+    color: var(--text-color-secondary);
+}
+.subtitle {
+    text-align: center;
+    font-size: 0.62rem;
+    margin-top: 15px;
+}
+
+
+.iconSunny {
+    display: inline-block;      
+    margin-top: 14px;
+
+    /* animação do balanço */
+    animation: boatSwing 3s ease-in-out infinite;
+    transform-origin: center bottom; /* pivô na base da imagem */
+}
+
+@keyframes boatSwing {
+    0%   { transform: rotate(-3deg) translateY(0); }
+    25%  { transform: rotate(-1deg) translateY(-2px); }
+    50%  { transform: rotate(3deg) translateY(0); }
+    75%  { transform: rotate(1deg) translateY(2px); }
+    100% { transform: rotate(-3deg) translateY(0); }
+}

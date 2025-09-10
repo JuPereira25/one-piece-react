@@ -1,0 +1,11 @@
+.musicButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.musicIcon {
+  width: 30px; /* tamanho do ícone */
+  height: 30px;
+}

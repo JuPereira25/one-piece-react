@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    --bg-color: #000000;
+    --mask-color-primary: #031935;
+    --mask-color-primary: #071F40;
+    --text-color-primary: #FFFFFF;
+    --text-color-secondary: #F8DE3C;
+
+
+    --ff-righteous: 'Righteous', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fw-regular: 400;
+    --fw-light: 300;
+    --fw-semibold: 600;
+    --fw-bold: 800;
+
+}
+
+
+h1, ul {
+    font-family: var(--ff-righteous);
+    font-weight: var(--fw-regular);
+}
+
+p {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-light);
+    color: var(--text-color-primary);
+
+}
+
+h2 {
+    font-family: var(--ff-poppins);
+    font-weight: var(--fw-semibold);
+    color: var(--text-color-secondary);
+}

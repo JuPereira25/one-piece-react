@@ -1,0 +1,49 @@
+.container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.descriptionCard {
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  text-align: center;
+  font-size: 1rem;
+}
+
+
+.bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.top {
+  top: auto;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.right {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+}
+
+
+.left {
+  top: 50%;
+  right: 100%;
+  left: auto;
+  transform: translateY(-50%);
+}
