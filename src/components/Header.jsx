@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import menuIcon from "../assets/icon/menu.svg";
 import MusicPlayer from "../components/MusicPlayer/MusicPlayer"
+import logo from "../assets/One-Piece-Logo.png";
 
 
 function Header() {
@@ -16,7 +17,7 @@ function Header() {
     <header className={styles.headerContainer}>
       <div className={styles.leftAndLogoGroup}>
         <Link to="/">
-          <img src="/One-Piece-Logo.png" alt="logo principal" />
+          <img src={logo} alt="logo principal" />
         </Link>
 
         {/* Menu de navegação para desktop */}

@@ -1,11 +1,12 @@
 import React, { useState, useRef } from "react";
 import playIcon from "../../assets/icon/play-icon.svg";
 import pauseIcon from "../../assets/icon/pause-icon.svg";
+import themeAudio from "../../assets/audio/theme.mp3";
 import styles from "./MusicPlayer.module.css"; 
 
 function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const audioRef = useRef(new Audio("/audio/theme.mp3"));
+  const audioRef = useRef(new Audio(themeAudio));
 
   const togglePlay = () => {
     if (isPlaying) {

@@ -2,11 +2,8 @@ import React from 'react';
 import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header.jsx";
-
-// Importações dos arquivos de estilo
 import './Styles/global.css';
 
-// Páginas
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Characters from './pages/Characters/Characters';
